@@ -32,19 +32,19 @@ import TimeLine from "../components/TimeLine.astro"
             <img class="w-3 h-3 mx-auto" src="/src/img/image.png" alt="yo si no me contratan">
             <nav class="flex gap-x-2 items-center justify-center">
                 <SocialPill href="https://www.linkedin.com/in/maximo-cruz-a25758258/">
-                    <LinkedInIcon class="w-6 h-6">
+                    <LinkedInIcon class="size-6">
                         LinkedIn
                 </SocialPill>
                 <SocialPill href="https://github.com/MaximoCrz056">
-                    <GitHubIcon class="w-6 h-6">
+                    <GitHubIcon class="size-6">
                         GitHub
                 </SocialPill>
                 <SocialPill href="https://www.youtube.com/channel/UCdxD9XuQRRgnJMF28GnP1pA">
-                    <YouTubeIcon class="w-7 h-7 pt-1.5">
+                    <YouTubeIcon class="size-6 pt-1">
                         YouTube
                 </SocialPill>
                 <SocialPill href="https://twitter.com/Acqua__0">
-                    <TwitterIcon class="w-7 h-7 pt-1.5">
+                    <TwitterIcon class="size-6">
                         Twitter
                 </SocialPill>
             </nav>
@@ -52,24 +52,17 @@ import TimeLine from "../components/TimeLine.astro"
         </section>
 
         <!-- Mis proyectos -->
-        <section class="w-full mx-auto lg:w-[940px] py-44">
-            <ol class="relative border-s border-gray-200 dark:border-gray-700">                  
-                <TimeLine href="https://github.com/MaximoCrz056/acquadev-portfolio">
-                    <h slot="title"> First Proyect: Portfolio web </h>
-                    <span slot="badge"> Latest </span>
-                    <tim slot="date">Released on August 25th, 2024 </tim>
-                    <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400" slot="p">
-                        All of the pages and components are first designed in Figma and we keep a parity 
-                        between the two versions even as i update the project. <br> <br>
-                        Made with Astro.
-                    </p>
-                </TimeLine>
-            </ol>
-
-            <a class="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-600 to-blue-500 group-hover:from-purple-600 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800" 
-                    href="/proyects">
+        <section class="w-full mx-auto lg:w-[720px]">
+            <TimeLine>
+                <div class="ml-64">
+                    <Badges>
+                        Latest
+                    </Badges>
+                </div>
+            </TimeLine>
+            <a href="/proyects" class="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-600 to-blue-500 group-hover:from-purple-600 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800">
                 <span class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
-                    See More
+                    See more
                 </span>
             </a>
         </section>
