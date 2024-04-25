@@ -1,17 +1,42 @@
 ---
 import Layout from "../layouts/Layout.astro"
 import Badges from "../components/Badge.astro"
+import GitHubIcon from "../components/icons/GitHub.astro"
+import LinkedInIcon from "../components/icons/LinkedIn.astro"
+import SocialPill from "../components/SocialPill.astro"
+import Github from "../icons/GitHub.astro"
 ---
 
 <Layout title="Home">
     <main>
-        <section class="w-full mx-auto lg:w-[740px] py-44">
+        <section class="w-full mx-auto lg:w-[940px] py-44">
+            <img class="rounded-full w-16 h-24 "
+                src="https://i.redd.it/snoovatar/avatars/nftv2_bmZ0X2VpcDE1NToxMzdfZWI5NTlhNzE1ZGZmZmU2ZjgyZjQ2MDU1MzM5ODJjNDg1OWNiMTRmZV8zMDgyODAwOQ_rare_75acc78f-c2c1-4301-b4ec-e54109ca04fc.png"
+                alt="acquaLogo"
+            >
             <h1 class="text-white text-5xl font-bold flex flex-row justify-center gap-x-4 pb-4">
-                    Hey soy AcquaDev <div class="flex justify-center items-center"><Badges>Disponible para trabajar</Badges></div>
+                    AcquaDev <a 
+                    href= "https://www.linkedin.com/in/maximo-cruz-a25758258/" 
+                    target="_blank"
+                    rel="noopener"
+                    class="flex justify-center items-center"><Badges>Software Engineer</Badges></a>
             </h1>
             <h2 class="text-xl opacity-70">
-                    +1 años de experiencia. Desarrollador multiplataforma. Experiencia en aplicaiones web. Mexico City, MX.
+                +1 años de experiencia como Desarrollador multiplataforma.
+                Experiencia en aplicaiones web y desarrollo de videojuegos con Unity.
+                Mexico City, MX.
             </h2>
+            <nav class="flex gap-x-2">
+                <SocialPill href="">
+                    <LinkedInIcon class="w-6 h-6">
+                        LinkedIn
+                </SocialPill>
+                <SocialPill href="">
+                    <GitHubIcon class="w-6 h-6">
+                        GitHub
+                </SocialPill>
+            </nav>
+            
         </section>
     </main>
 </Layout>
