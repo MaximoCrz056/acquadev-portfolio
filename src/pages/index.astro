@@ -1,6 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro"
 import Badges from "../components/Badge.astro"
+import BadgeXL from "../components/BadgeXL.astro"
 import GitHubIcon from "../components/icons/GitHub.astro"
 import LinkedInIcon from "../components/icons/LinkedIn.astro"
 import SocialPill from "../components/SocialPill.astro"
@@ -10,41 +11,41 @@ import TimeLine from "../components/TimeLine.astro"
 ---
 
 <Layout title="Portfolio AcquaDev" description="Portfolio of acquadev - Sotware Engineer. Contrata a acquadev para desarrollar aplicaciones de calidad.">
-    <main>
+    <main class="px-4">
         <!-- Primer cuadro de dialogo: Desc general de mi -->
         <section class="w-full mx-auto lg:w-[940px] pt-44 pb-20">
             <img class="rounded-full w-16 h-24 "
                 src="https://i.redd.it/snoovatar/avatars/nftv2_bmZ0X2VpcDE1NToxMzdfZWI5NTlhNzE1ZGZmZmU2ZjgyZjQ2MDU1MzM5ODJjNDg1OWNiMTRmZV8zMDgyODAwOQ_rare_75acc78f-c2c1-4301-b4ec-e54109ca04fc.png"
                 alt="acquaLogo"
             >
-            <h1 class="text-white text-5xl font-bold flex flex-row justify-center gap-x-4 pb-4">
+            <h1 class="text-white text-3xl md:text-4xl lg:text-5xl font-bold flex flex-row justify-center gap-x-4 pb-2 lg:pb-4">
                     AcquaDev <a 
                     href= "https://www.linkedin.com/in/maximo-cruz-a25758258/" 
                     target="_blank"
                     rel="noopener"
                     class="flex justify-center items-center"><Badges>-Soon- Software Engineer</Badges></a>
             </h1>
-            <h2 class="text-xl opacity-70 text-center ">
+            <h2 class="text-sm md:xl lg:text-2xl opacity-70 text-center justify-center items-center text-wrap">
                 0 years experiece as Multiplatform Developer.
                 Experience in web applications and game development with Unity.
                 Mexico City, MX. <p class="text-xs">Hire me T-T</p>
             </h2>
             <img class="w-3 h-3 mx-auto" src="/src/img/image.png" alt="yo si no me contratan">
-            <nav class="flex gap-x-2 items-center justify-center">
+            <nav class="flex gap-2 items-center justify-center flex-wrap">
                 <SocialPill href="https://www.linkedin.com/in/maximo-cruz-a25758258/">
-                    <LinkedInIcon class="size-6">
+                    <LinkedInIcon class="size-3 lg:size-6">
                         LinkedIn
                 </SocialPill>
                 <SocialPill href="https://github.com/MaximoCrz056">
-                    <GitHubIcon class="size-6">
+                    <GitHubIcon class="size-3 lg:size-6">
                         GitHub
                 </SocialPill>
                 <SocialPill href="https://www.youtube.com/channel/UCdxD9XuQRRgnJMF28GnP1pA">
-                    <YouTubeIcon class="size-6 pt-1">
+                    <YouTubeIcon class="size-3 lg:size-6">
                         YouTube
                 </SocialPill>
                 <SocialPill href="https://twitter.com/Acqua__0">
-                    <TwitterIcon class="size-6">
+                    <TwitterIcon class="size-3 lg:size-6">
                         Twitter
                 </SocialPill>
             </nav>
@@ -53,6 +54,10 @@ import TimeLine from "../components/TimeLine.astro"
 
         <!-- Mis proyectos -->
         <section class="w-full mx-auto lg:w-[720px]">
+            <h2 id="proyects" class="text-4xl mb-6 mt-44">
+                Proyects
+            </h2>
+
             <TimeLine>
                 <div class="ml-64">
                     <Badges>
@@ -60,11 +65,42 @@ import TimeLine from "../components/TimeLine.astro"
                     </Badges>
                 </div>
             </TimeLine>
-            <a href="/proyects" class="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-600 to-blue-500 group-hover:from-purple-600 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800">
-                <span class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
-                    See more
-                </span>
-            </a>
+        </section>
+
+
+        <!-- About me -->
+        <h1 class="text-2xl lg:text-5xl text-center mt-60 font-bold">
+            About me
+            <hr class="border-gray-200 dark:border-gray-700 my-5 mx-auto lg:w-[480px]">
+        </h1>
+        <!-- Mi vision -->
+        <section class="text-base lg:text-xl lg:my-10 lg:mx-60 mr-auto lg:w-[720px] pt-20 pb-10">
+            <BadgeXL>
+                My vission
+            </BadgeXL>
+            <p class="text-white/80 px-5 mt-2">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias aliquam magni distinctio eaque sequi consequatur a ea in enim 
+                ipsa veniam amet, nihil at voluptates animi! Nemo necessitatibus pariatur maiores sequi explicabo, voluptatem doloremque quas quidem 
+                iusto saepe velit amet dolorem corporis earum dolores iste numquam, aliquid animi? Suscipit maxime perferendis veniam. Maiores, 
+                expedita doloribus aliquid perspiciatis dolorem vitae sit incidunt consequatur veniam minus, a officiis explicabo, aut nesciunt? 
+                Voluptatum sequi, recusandae adipisci, maiores amet repellat voluptates similique qui perferendis sunt porro voluptatibus eligendi 
+                ducimus quam expedita in assumenda quia ipsum tenetur facere, possimus veritatis? Earum voluptatem quos animi labore!
+            </p>
+        </section>
+    
+        <!-- Mi historia -->
+        <section class="w-full my-10 mr-60 mx-auto lg:w-[720px] pt-20 pb-10">
+            <BadgeXL>
+                My history
+            </BadgeXL>
+            <p class="text-white/80 px-5 mt-2">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias aliquam magni distinctio eaque sequi consequatur a ea in enim 
+                ipsa veniam amet, nihil at voluptates animi! Nemo necessitatibus pariatur maiores sequi explicabo, voluptatem doloremque quas quidem 
+                iusto saepe velit amet dolorem corporis earum dolores iste numquam, aliquid animi? Suscipit maxime perferendis veniam. Maiores, 
+                expedita doloribus aliquid perspiciatis dolorem vitae sit incidunt consequatur veniam minus, a officiis explicabo, aut nesciunt? 
+                Voluptatum sequi, recusandae adipisci, maiores amet repellat voluptates similique qui perferendis sunt porro voluptatibus eligendi 
+                ducimus quam expedita in assumenda quia ipsum tenetur facere, possimus veritatis? Earum voluptatem quos animi labore!
+            </p>
         </section>
     </main>
 </Layout>
