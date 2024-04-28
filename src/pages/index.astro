@@ -11,7 +11,7 @@ import TimeLine from "../components/TimeLine.astro"
 ---
 
 <Layout title="Portfolio AcquaDev" description="Portfolio of acquadev - Sotware Engineer. Contrata a acquadev para desarrollar aplicaciones de calidad.">
-    <main class="px-4">
+    <main class="px-4 mt-20">
         <!-- Primer cuadro de dialogo: Desc general de mi -->
         <section class="w-full mx-auto lg:w-[940px] pt-44 pb-20">
             <img class="rounded-full w-16 h-24 "
@@ -20,7 +20,7 @@ import TimeLine from "../components/TimeLine.astro"
             >
             <h1 class="text-white text-3xl md:text-4xl lg:text-5xl font-bold flex flex-row justify-center gap-x-4 pb-2 lg:pb-4">
                     AcquaDev <a 
-                    href= "https://www.linkedin.com/in/maximo-cruz-a25758258/" 
+                    href= "https://www.linkedin.com/in/maximo-cruz-a25758258/"
                     target="_blank"
                     rel="noopener"
                     class="flex justify-center items-center"><Badges>-Soon- Software Engineer</Badges></a>
@@ -52,9 +52,11 @@ import TimeLine from "../components/TimeLine.astro"
             <hr class="border-gray-200 dark:border-gray-700 my-5 mx-auto lg:w-[480px]">
         </section>
 
+        <p id="proyects"></p>
+
         <!-- Mis proyectos -->
         <section class="w-full mx-auto lg:w-[720px]">
-            <h2 id="proyects" class="text-4xl mb-6 mt-44">
+            <h2 class="text-4xl mb-6 mt-44">
                 Proyects
             </h2>
 
@@ -65,42 +67,6 @@ import TimeLine from "../components/TimeLine.astro"
                     </Badges>
                 </div>
             </TimeLine>
-        </section>
-
-
-        <!-- About me -->
-        <h1 class="text-2xl lg:text-5xl text-center mt-60 font-bold">
-            About me
-            <hr class="border-gray-200 dark:border-gray-700 my-5 mx-auto lg:w-[480px]">
-        </h1>
-        <!-- Mi vision -->
-        <section class="text-base lg:text-xl lg:my-10 lg:mx-60 mr-auto lg:w-[720px] pt-20 pb-10">
-            <BadgeXL>
-                My vission
-            </BadgeXL>
-            <p class="text-white/80 px-5 mt-2">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias aliquam magni distinctio eaque sequi consequatur a ea in enim 
-                ipsa veniam amet, nihil at voluptates animi! Nemo necessitatibus pariatur maiores sequi explicabo, voluptatem doloremque quas quidem 
-                iusto saepe velit amet dolorem corporis earum dolores iste numquam, aliquid animi? Suscipit maxime perferendis veniam. Maiores, 
-                expedita doloribus aliquid perspiciatis dolorem vitae sit incidunt consequatur veniam minus, a officiis explicabo, aut nesciunt? 
-                Voluptatum sequi, recusandae adipisci, maiores amet repellat voluptates similique qui perferendis sunt porro voluptatibus eligendi 
-                ducimus quam expedita in assumenda quia ipsum tenetur facere, possimus veritatis? Earum voluptatem quos animi labore!
-            </p>
-        </section>
-    
-        <!-- Mi historia -->
-        <section class="w-full my-10 mr-60 mx-auto lg:w-[720px] pt-20 pb-10">
-            <BadgeXL>
-                My history
-            </BadgeXL>
-            <p class="text-white/80 px-5 mt-2">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias aliquam magni distinctio eaque sequi consequatur a ea in enim 
-                ipsa veniam amet, nihil at voluptates animi! Nemo necessitatibus pariatur maiores sequi explicabo, voluptatem doloremque quas quidem 
-                iusto saepe velit amet dolorem corporis earum dolores iste numquam, aliquid animi? Suscipit maxime perferendis veniam. Maiores, 
-                expedita doloribus aliquid perspiciatis dolorem vitae sit incidunt consequatur veniam minus, a officiis explicabo, aut nesciunt? 
-                Voluptatum sequi, recusandae adipisci, maiores amet repellat voluptates similique qui perferendis sunt porro voluptatibus eligendi 
-                ducimus quam expedita in assumenda quia ipsum tenetur facere, possimus veritatis? Earum voluptatem quos animi labore!
-            </p>
         </section>
     </main>
 </Layout>
