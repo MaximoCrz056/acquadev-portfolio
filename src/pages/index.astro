@@ -1,72 +1,38 @@
 ---
-import Layout from "../layouts/Layout.astro"
-import Badges from "../components/Badge.astro"
-import BadgeXL from "../components/BadgeXL.astro"
-import GitHubIcon from "../components/icons/GitHub.astro"
-import LinkedInIcon from "../components/icons/LinkedIn.astro"
-import SocialPill from "../components/SocialPill.astro"
-import YouTubeIcon from "../components/icons/YouTube.astro"
-import TwitterIcon from "../components/icons/Twitter.astro"
-import TimeLine from "../components/TimeLine.astro"
+import Header from "../components/Header.astro";
+import Projects from "../components/Projects.astro";
+import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Portfolio AcquaDev" description="Portfolio of acquadev - Sotware Engineer. Contrata a acquadev para desarrollar aplicaciones de calidad.">
-    <main class="px-4 mt-20">
-        <!-- Primer cuadro de dialogo: Desc general de mi -->
-        <section class="w-full mx-auto lg:w-[940px] pt-44 pb-20">
-            <img class="rounded-full w-16 h-24 "
-                src="https://i.redd.it/snoovatar/avatars/nftv2_bmZ0X2VpcDE1NToxMzdfZWI5NTlhNzE1ZGZmZmU2ZjgyZjQ2MDU1MzM5ODJjNDg1OWNiMTRmZV8zMDgyODAwOQ_rare_75acc78f-c2c1-4301-b4ec-e54109ca04fc.png"
-                alt="acquaLogo"
-            >
-            <h1 class="text-white text-3xl md:text-4xl lg:text-5xl font-bold flex flex-row justify-center gap-x-4 pb-2 lg:pb-4">
-                    AcquaDev <a 
-                    href= "https://www.linkedin.com/in/maximo-cruz-a25758258/"
-                    target="_blank"
-                    rel="noopener"
-                    class="flex justify-center items-center"><Badges>-Soon- Software Engineer</Badges></a>
+    <main class="min-h-screen">
+        <Header />
+        <section class="w-full max-w-3xl mx-auto px-4 pt-32 pb-16 animate-fadeIn">
+            <div class="relative group">
+                <img class="rounded-full w-24 h-24 mx-auto lg:w-32 lg:h-32 mb-10 lg:mb-8"
+                    src="https://media.licdn.com/dms/image/v2/D4E03AQERP6sl5NX6zg/profile-displayphoto-shrink_800_800/B4EZZM2Q7DHMAg-/0/1745046016389?e=1750291200&v=beta&t=_hszP1NndarQXVxziAk49snS4gKDtRutDdcoyUvaskU"
+                    alt="acquaLogo"
+                />
+            </div>
+            
+            <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold flex flex-col md:flex-row justify-center items-center gap-2 md:gap-x-4 pb-4 lg:pb-6">
+                <a href="https://www.linkedin.com/in/maximo-gomez-cruz-a25758258/"
+                   target="_blank"
+                   rel="noopener"
+                   class="text-white/70 hover:text-white transition-colors duration-300 flex items-center gap-2">
+                   <span class="relative inline-block"> Maximo Gómez Cruz</span>
+                   <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                </a>
             </h1>
-            <h2 class="text-sm md:xl lg:text-2xl opacity-70 text-center justify-center items-center text-wrap">
-                0 years experiece as Multiplatform Developer.
-                Experience in web applications and game development with Unity.
-                Mexico City, MX. <p class="text-xs">Hire me T-T</p>
+
+            <p class="text-white/60 text-center max-w-2xl mx-auto leading-relaxed">AcquaDev</p>
+            
+            <h2 class="text-sm md:text-lg lg:text-xl text-white/60 text-center max-w-2xl mx-auto leading-relaxed">
+                Multiplatform Developer with experience in web applications and game development with Unity.
+                <span class="block mt-2">Based in Mexico City, MX.</span>
+                <span class="inline-block mt-3 px-3 py-1 border border-white/20 rounded-full text-xs animate-pulse">Available for new opportunities</span>
             </h2>
-            <img class="w-3 h-3 mx-auto" src="https://i.ibb.co/ByVG7Z9/pp.webp" alt="yo si no me contratan">
-            <nav class="flex gap-2 items-center justify-center flex-wrap">
-                <SocialPill href="https://www.linkedin.com/in/maximo-cruz-a25758258/">
-                    <LinkedInIcon class="size-3 lg:size-6">
-                        LinkedIn
-                </SocialPill>
-                <SocialPill href="https://github.com/MaximoCrz056">
-                    <GitHubIcon class="size-3 lg:size-6">
-                        GitHub
-                </SocialPill>
-                <SocialPill href="https://www.youtube.com/channel/UCdxD9XuQRRgnJMF28GnP1pA">
-                    <YouTubeIcon class="size-3 lg:size-6">
-                        YouTube
-                </SocialPill>
-                <SocialPill href="https://twitter.com/Acqua__0">
-                    <TwitterIcon class="size-3 lg:size-6">
-                        Twitter
-                </SocialPill>
-            </nav>
-            <hr class="border-gray-200 dark:border-gray-700 my-5 mx-auto lg:w-[480px]">
         </section>
-
-        <p id="proyects"></p>
-
-        <!-- Mis proyectos -->
-        <section class="w-full mx-auto lg:w-[720px]">
-            <h2 class="text-4xl mb-6 mt-44">
-                Proyects
-            </h2>
-
-            <TimeLine>
-                <div class="ml-64">
-                    <Badges>
-                        Latest
-                    </Badges>
-                </div>
-            </TimeLine>
-        </section>
+        <Projects />
     </main>
 </Layout>

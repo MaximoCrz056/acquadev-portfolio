@@ -1,88 +1,27 @@
 ---
-import SecondaryLayout from "../layouts/SecondaryLayout.astro";
-
-
+import Header from "../components/Header.astro";
+import Layout from "../layouts/Layout.astro";
 ---
 
-<SecondaryLayout title="" description="">
-    <!-- component -->
-<div class="flex items-center justify-center p-12 mt-20">
-    <!-- Author: FormBold Team -->
-    <!-- Learn More: https://formbold.com -->
-    <div class="mx-auto w-full max-w-[550px]">
-      <form action="#" method="POST">
-        <div class="mb-5">
-          <label
-            for="name"
-            class="text-white text:sm md:text-xl lg:text-2xl"
-          >
-            Full Name
-          </label>
-          <input
-            type="text"
-            name="name"
-            id="name"
-            placeholder="Full Name"
-            class="w-full rounded-md border border-[#e0e0e0] bg-indigo-950 py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
-          />
-        </div>
-
-        <div class="mb-5">
-          <label
-            for="email"
-            class="text-white text:sm md:text-xl lg:text-2xl"
-          >
-            Email Address
-          </label>
-          <input
-            type="email"
-            name="email"
-            id="email"
-            placeholder="example@domain.com"
-            class="w-full rounded-md border border-[#e0e0e0] bg-indigo-950 py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
-          />
-        </div>
-
-        <div class="mb-5">
-          <label
-            for="subject"
-            class="text-white text:sm md:text-xl lg:text-2xl"
-          >
-            Subject
-          </label>
-          <input
-            type="text"
-            name="subject"
-            id="subject"
-            placeholder="Enter your subject"
-            class="w-full rounded-md border border-[#e0e0e0] bg-indigo-950 py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
-          />
-        </div>
-
-        <div class="mb-5">
-          <label
-            for="message"
-            class="text-white text:sm md:text-xl lg:text-2xl"
-          >
-            Message
-          </label>
-          <textarea
-            rows="4"
-            name="message"
-            id="message"
-            placeholder="Type your message"
-            class="w-full resize-none rounded-md border border-[#e0e0e0] bg-indigo-950 py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
-          ></textarea>
-        </div>
-
-        <div>
-          <button
-            class="hover:shadow-form rounded-md bg-indigo-900 py-3 px-8 text-base font-semibold text-white outline-none"
-          >
-            Submit
-          </button>
-        </div>
-      </form>
+<Layout title="Contact AcquaDev" description="Contacta con AcquaDev - Desarrollador multiplataforma para tus proyectos web y videojuegos.">
+  <main class="min-h-screen">
+    <Header />
+    <section class="w-full max-w-3xl mx-auto px-4 pt-32 pb-16 animate-fadeIn">
+  <h2 class="text-2xl md:text-3xl font-bold text-center mb-8">Contacto</h2>
+  <p class="text-white/70 text-lg text-center mb-6">¿Quieres ponerte en contacto? Completa el formulario o utiliza los enlaces directos.</p>
+  <form class="bg-black/60 border border-white/20 rounded-lg p-6 flex flex-col gap-4 max-w-xl mx-auto shadow-lg transition-all duration-300">
+    <input type="text" name="name" placeholder="Nombre" required class="rounded px-3 py-2 bg-black/80 text-white placeholder-white/40 border border-white/20 focus:outline-none focus:border-white/40 transition-all duration-300" />
+    <input type="email" name="email" placeholder="Correo electrónico" required class="rounded px-3 py-2 bg-black/80 text-white placeholder-white/40 border border-white/20 focus:outline-none focus:border-white/40 transition-all duration-300" />
+    <textarea name="message" placeholder="Mensaje" required rows="4" class="rounded px-3 py-2 bg-black/80 text-white placeholder-white/40 border border-white/20 focus:outline-none focus:border-white/40 transition-all duration-300"></textarea>
+    <button type="submit" class="bg-white/10 hover:bg-white/20 text-white font-semibold py-2 rounded border border-white/20 transition-all duration-300">Enviar</button>
+  </form>
+  <div class="flex flex-col items-center mt-8 gap-2">
+    <a href="mailto:maximo.gomez.cruz@gmail.com" class="text-blue-400 hover:underline">maximo.gomez.cruz@gmail.com</a>
+    <div class="flex gap-4 mt-2">
+      <a href="https://www.linkedin.com/in/maximo-gomez-cruz-a25758258/" target="_blank" rel="noopener" class="text-white/60 hover:text-white transition-colors">LinkedIn</a>
+      <a href="https://github.com/MaximoCrz056" target="_blank" rel="noopener" class="text-white/60 hover:text-white transition-colors">GitHub</a>
     </div>
   </div>
-</SecondaryLayout>
+    </section>
+  </main>
+</Layout>

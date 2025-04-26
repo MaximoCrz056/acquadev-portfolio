@@ -1,13 +1,10 @@
 ---
-import Header from "../components/Header.astro"
-import Footer from "../components/Footer.astro"
-import '@fontsource/ibm-plex-mono';
-
 interface Props {
-    title: string;
-    description: string;
+    title?: string;
+    description?: string;
 }
-const {title, description} = Astro.props;
+
+const { title = "AcquaDev Portfolio", description = "Portfolio of AcquaDev - Software Engineer. Desarrollador de aplicaciones web y juegos." } = Astro.props;
 ---
 
 <!DOCTYPE html>
@@ -16,35 +13,31 @@ const {title, description} = Astro.props;
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content={description}>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <title>{title}</title>
 </head>
-<body class="relative h-full w-full bg-slate-950 bg-[radial-gradient(circle_farthest-side,rgba(255,0,182,.15),rgba(255,255,255,0))]">
-    <Header></Header>
-    <slot/>
-    <Footer>
+<body class="relative h-full w-full bg-black text-white">
+    <div class="min-h-screen">
+        <slot />
+    </div>
+    <style is:global>
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            animation: fadeIn 0.5s ease-in-out;
+        }
+        
+        a, button {
+            transition: all 0.3s ease;
+        }
+    </style>
 </body>
 </html>
-
-<style is:global>
-    :root {
-        color-scheme: light dark;
-    }
-
-    html {
-        font-family: 'IBM Plex Mono', monospace;
-        scroll-behavior: smooth;
-    }
-
-    body {
-        background-color: #0c0c0c;
-        display: flex;
-        flex-direction: column;
-        height: 100vh;
-    }
-
-    @media (prefers-reduced-motion: reduce){
-        html {
-            scroll-behavior: auto;
-        }
-    }
-</style>

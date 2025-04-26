@@ -1,15 +1,31 @@
 ---
 
 ---
-
-<header class="sticky top-0 z-50">
-    <nav class="flex justify-center items-center py-5 w-[90%] xl:w-[40%] lg:text-lg text-sm mx-auto bg-indigo-950 bg-opacity-95 rounded-3xl mt-1">
-        <div class="flex flex-row xl:gap-x-10 gap-x-5 text-white/50">
-            <a href="#top" class="hover:text-white/100">Home</a>
-            <a href="#proyects"class="hover:text-white/100">Proyects</a>
-            <p>|</p>
-            <a href="/about" class="hover:text-white/100">About me</a>
-            <a href="/contact" class="hover:text-white/100">Contact</a>
+<header class="sticky top-0 z-50 backdrop-blur-md bg-black/80 border-b border-white/10 shadow-lg transition-all duration-300">
+    <nav class="flex justify-between items-center py-4 px-6 w-full max-w-6xl mx-auto">
+        <div class="flex items-center">
+            <a href="/" class="flex items-center gap-2 group">
+                <span class="text-white/80 font-semibold text-lg tracking-wide group-hover:text-white transition-colors duration-300">AcquaDev</span>
+            </a>
+        </div>
+        
+        <div class="flex flex-row xl:gap-x-10 gap-x-6 text-white/60">
+            <a href="/about" class="nav-link hover:text-white transition-all duration-300 relative after:absolute after:bottom-0 after:left-0 after:h-[1px] after:w-0 after:bg-white hover:after:w-full after:transition-all after:duration-300">About</a>
+            <a href="/contact" class="nav-link hover:text-white transition-all duration-300 relative after:absolute after:bottom-0 after:left-0 after:h-[1px] after:w-0 after:bg-white hover:after:w-full after:transition-all after:duration-300">Contact</a>
         </div>
     </nav>
 </header>
+
+<style>
+    .nav-link {
+        position: relative;
+        padding: 0.25rem 0;
+        font-weight: 500;
+        letter-spacing: 0.025em;
+        transform: translateY(0);
+    }
+    
+    .nav-link:hover {
+        transform: translateY(-1px);
+    }
+</style>

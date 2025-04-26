@@ -1,44 +1,34 @@
 ---
-import BadgeXL from "../components/BadgeXL.astro";
-import SecondaryLayout from "../layouts/SecondaryLayout.astro";
-
+import Header from "../components/Header.astro";
+import Layout from "../layouts/Layout.astro";
 ---
 
-<SecondaryLayout title="About" description="">
-    <!-- About me -->
-    <section class="pt-44 pb-5" id="about">
-        <h1 class="text-2xl lg:text-5xl text-center font-bold">
-            About me
-            <hr class="border-gray-200 dark:border-gray-700 my-5 mx-auto lg:w-[480px]">
-        </h1>
+<Layout title="About AcquaDev" description="Learn more about AcquaDev - Multiplatform Developer with experience in web applications and game development.">
+  <main class="min-h-screen">
+    <Header />
+    <section class="w-full max-w-3xl mx-auto px-4 pt-32 pb-16 animate-fadeIn">
+  <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold text-center mb-8 animate-fadeIn">About me</h2>
+  <p class="text-white/70 text-lg text-center mb-8 max-w-2xl mx-auto leading-relaxed animate-fadeIn" style="animation-delay: 0.2s;">Multiplatform Developer with experience in web applications and game development with Unity. Passionate about technology, continuous learning, and creating innovative solutions. Based in Mexico City, MX.</p>
+  <div class="grid md:grid-cols-2 gap-8 animate-fadeIn" style="animation-delay: 0.4s;">
+    <div>
+      <h3 class="font-semibold text-white/80 text-xl mb-4 border-b border-white/10 pb-2">Skills</h3>
+      <ul class="space-y-2 text-white/60">
+        <li class="flex items-center gap-2"><span class="inline-block w-1.5 h-1.5 bg-white/40 rounded-full"></span>JavaScript / TypeScript</li>
+        <li class="flex items-center gap-2"><span class="inline-block w-1.5 h-1.5 bg-white/40 rounded-full"></span>Astro, React, Node.js</li>
+        <li class="flex items-center gap-2"><span class="inline-block w-1.5 h-1.5 bg-white/40 rounded-full"></span>Unity (C#)</li>
+        <li class="flex items-center gap-2"><span class="inline-block w-1.5 h-1.5 bg-white/40 rounded-full"></span>HTML, CSS, Tailwind</li>
+        <li class="flex items-center gap-2"><span class="inline-block w-1.5 h-1.5 bg-white/40 rounded-full"></span>Git & GitHub</li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="font-semibold text-white/80 text-xl mb-4 border-b border-white/10 pb-2">Experience</h3>
+      <ul class="space-y-2 text-white/60">
+        <li class="flex items-center gap-2"><span class="inline-block w-1.5 h-1.5 bg-white/40 rounded-full"></span>Responsive web application development</li>
+        <li class="flex items-center gap-2"><span class="inline-block w-1.5 h-1.5 bg-white/40 rounded-full"></span>Game development and simulations with Unity</li>
+        <li class="flex items-center gap-2"><span class="inline-block w-1.5 h-1.5 bg-white/40 rounded-full"></span>Open source project collaboration</li>
+      </ul>
+    </div>
+  </div>
     </section>
-    <!-- Mi vision -->
-    <section class="text-base lg:text-xl lg:my-10 lg:mx-60 mr-auto lg:w-[720px] pt-20 pb-10">
-        <BadgeXL>
-            My vission
-        </BadgeXL>
-        <p class="text-white/80 px-5 mt-2">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias aliquam magni distinctio eaque sequi consequatur a ea in enim 
-            ipsa veniam amet, nihil at voluptates animi! Nemo necessitatibus pariatur maiores sequi explicabo, voluptatem doloremque quas quidem 
-            iusto saepe velit amet dolorem corporis earum dolores iste numquam, aliquid animi? Suscipit maxime perferendis veniam. Maiores, 
-            expedita doloribus aliquid perspiciatis dolorem vitae sit incidunt consequatur veniam minus, a officiis explicabo, aut nesciunt? 
-            Voluptatum sequi, recusandae adipisci, maiores amet repellat voluptates similique qui perferendis sunt porro voluptatibus eligendi 
-            ducimus quam expedita in assumenda quia ipsum tenetur facere, possimus veritatis? Earum voluptatem quos animi labore!
-        </p>
-    </section>
-
-    <!-- Mi historia -->
-    <section class="w-full my-10 mr-60 mx-auto lg:w-[720px] pt-20 pb-10">
-        <BadgeXL>
-            My history
-        </BadgeXL>
-        <p class="text-white/80 px-5 mt-2">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias aliquam magni distinctio eaque sequi consequatur a ea in enim 
-            ipsa veniam amet, nihil at voluptates animi! Nemo necessitatibus pariatur maiores sequi explicabo, voluptatem doloremque quas quidem 
-            iusto saepe velit amet dolorem corporis earum dolores iste numquam, aliquid animi? Suscipit maxime perferendis veniam. Maiores, 
-            expedita doloribus aliquid perspiciatis dolorem vitae sit incidunt consequatur veniam minus, a officiis explicabo, aut nesciunt? 
-            Voluptatum sequi, recusandae adipisci, maiores amet repellat voluptates similique qui perferendis sunt porro voluptatibus eligendi 
-            ducimus quam expedita in assumenda quia ipsum tenetur facere, possimus veritatis? Earum voluptatem quos animi labore!
-        </p>
-    </section>
-</SecondaryLayout>
+  </main>
+</Layout>
