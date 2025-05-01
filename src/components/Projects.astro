@@ -2,7 +2,7 @@
 let repos = [];
 let error = '';
 try {
-  const res = await fetch('https://api.github.com/users/MaximoCrz056/repos?sort=updated&per_page=2');
+  const res = await fetch('https://api.github.com/users/MaximoCrz056/repos?sort=updated&per_page=6');
   if (!res.ok) throw new Error('No se pudieron obtener los proyectos');
   repos = await res.json();
 } catch (e) {
